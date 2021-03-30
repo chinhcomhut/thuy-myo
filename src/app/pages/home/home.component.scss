@@ -112,3 +112,22 @@ $margin-promotion-sections-small: 15px;
   width: 100%;
   height: auto;
 }
+mat-grid-tile {
+  background: lightblue;
+}
+div.example {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}

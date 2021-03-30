@@ -34,6 +34,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { RegisterComponent } from './formlogin/register/register.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { title: 'Home' } },
@@ -66,7 +67,7 @@ export const appRoutes: Routes = [
     MatFormFieldModule, //Dung cho Matformfild material
     MatInputModule,  //Dung cho Matinput material
     ReactiveFormsModule, // Vua ngModel vua FormControl
-    RouterModule.forRoot(appRoutes, { useHash: false })
+    RouterModule.forRoot(appRoutes, {useHash: false}), MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

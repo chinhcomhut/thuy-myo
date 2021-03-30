@@ -8,9 +8,11 @@ import { AudioPlayerComponent } from 'projects/ngx-audio-player/src/public_api';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent {
 
   constructor() { }
+
   private fmaBaseUrl = 'https://files.freemusicarchive.org/storage-freemusicarchive-org/music';
   
   @ViewChild("player")
@@ -146,4 +148,10 @@ export class HomeComponent {
     this.msaapDisablePositionSlider = event.checked;
   }
   // End: Required for demo purpose
+}
+export interface Tile {
+  // color: string;
+  // cols: number;
+  // rows: number;
+  text: string;
 }
